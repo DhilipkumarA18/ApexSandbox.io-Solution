@@ -8,6 +8,7 @@ for(string str:vowle)
     if(word.startsWithIgnoreCase(str))
     {
       newword= 'an '+word;
+      break;
     }
     else{
        newword='a '+word;
