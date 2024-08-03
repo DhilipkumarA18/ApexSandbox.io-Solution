@@ -11,6 +11,7 @@ for(string str:vowle)
     }
     else{
        newword='a '+word;
+       break;
     }
 }
 return newword;
