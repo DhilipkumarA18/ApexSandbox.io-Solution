@@ -1,19 +1,17 @@
 public String aOrAn(String word) {
     //code here
-List<string> vowle=new List<string>{'a','e','i','o','u'};
-string newword='';
-for(string str:vowle)
-{
-    
-    if(word.startsWithIgnoreCase(str))
+
+
+    if(word.startsWithIgnoreCase('a')||word.startsWithIgnoreCase('e')
+    || word.startsWithIgnoreCase('i') ||word.startsWithIgnoreCase('o')
+    ||word.startsWithIgnoreCase('o'))
     {
-      newword= 'an '+word;
-      break;
+      return'an '+word;
+     
     }
     else{
-       newword='a '+word;
-       break;
+       return'a '+word;
+       
     }
-}
-return newword;
+
 }
