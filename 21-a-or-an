@@ -1,11 +1,14 @@
 public String aOrAn(String word) {
     //code here
-   string firstLetter = Character.toLowerCase(word.charAt(0));
-
-    // Check if the first letter is a vowel
-    if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u') {
-        return "an " + word;
-    } else {
-        return "a " + word;
+List<string> vowle=new List<string>{'a','e','i','o','u'};
+for(string str:vowle)
+{
+    if(word.startsWithIgnoreCase(str))
+    {
+       return'an '+word;
     }
+    else{
+        return'a '+word;
+    }
+}
 }
